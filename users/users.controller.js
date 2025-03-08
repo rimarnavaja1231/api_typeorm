@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Joi = require("joi");
-const validateRequest = require("__middleware/validate-request");
+const validateRequest = require("_middleware/validate-request");
 const Role = require("_helpers/role");
 const userService = require("./user.service");
 
@@ -13,6 +13,7 @@ router.put("/:id", updateSchema, update);
 router.delete("/:id", _delete);
 
 module.exports = router;
+
 // route functions
 function getAll(req, res, next) {
   userService

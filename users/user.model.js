@@ -8,7 +8,7 @@ function model(sequilize){
         passwordHash: {type: DataTypes.STRING, allowNull: false},
         title: {type: DataTypes.STRING, allowNull: false},
         firstName: {type: DataTypes.STRING, allowNull: false},
-        lastname: {type: DataTypes.STRING, allowNull: false},
+        lastName: {type: DataTypes.STRING, allowNull: false},
         role: {type: DataTypes.STRING, allowNull: false},
     };
 
